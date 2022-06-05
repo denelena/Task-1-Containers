@@ -1,0 +1,13 @@
+version: '3.7'
+services:  
+  postgresql:
+    image: postgres:latest
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./hostdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: KlaraUkrala
+      POSTGRES_USER: Karl
+      POSTGRES_DB: default
+
